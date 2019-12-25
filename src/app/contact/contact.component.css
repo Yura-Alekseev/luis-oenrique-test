@@ -110,6 +110,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin: 30px auto 0;
   width: 123px;
   height: 50px;
@@ -132,6 +133,8 @@
 }
 
 .contact__btn-arrow {
+  width: 15px;
+  height: 13px;
   margin-left: 7px;
   margin-top: 2px;
   content: url("../../assets/logos/send-button.png");
@@ -166,7 +169,10 @@
 }
 
 .contact__up-btn-arrow {
-  content: url("../../assets/logos/up-btn-arrow.png");
+  width: 14px;
+  height: 9px;
+  background: url("../../assets/logos/up-btn-arrow.png") no-repeat;
+  background-size: contain;
 }
 
 .contact__footer {
