@@ -1,0 +1,951 @@
+.contact {
+  background: url("../../assets/backgrounds/contact-background.png") no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.contact__separator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  width: 60px;
+  height: 4px;
+  background: var(--contact_separator-color);
+}
+
+.contact__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  font-family: "Asap Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 60px;
+  font-size: 46px;
+  color: var(--contact_title-color);
+}
+
+/*CONTACT__FORM*/
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 770px;
+  margin: 0 auto;
+}
+
+.contact__form-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact__name,
+.contact__email {
+  width: 370px;
+  height: 57px;
+  padding: 0 9px;
+  background: var(--white-background);
+  border: none;
+  font-family: "Asap Regular", sans-serif;
+  color: var(--main-color_dark-grey);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.contact__name::placeholder,
+.contact__email::placeholder {
+  font-family: "Asap Regular", sans-serif;
+  color: var(--main-color_dark-grey);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.contact__message {
+  width: 100%;
+  height: 207px;
+  margin-top: 30px;
+  padding: 25px 9px 0;
+  resize: none;
+  border: none;
+  background: var(--white-background);
+  font-family: "Asap Regular", sans-serif;
+  color: var(--main-color_dark-grey);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.contact__message::placeholder {
+  font-family: "Asap Regular", sans-serif;
+  color: var(--main-color_dark-grey);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.contact__form-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px auto 0;
+  width: 123px;
+  height: 50px;
+  border: none;
+  background: var(--white-background);
+  font-family: "Asap Medium", sans-serif;
+  color: var(--main-color_dark-grey);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 18px 29px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.contact__form-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+.contact__btn-arrow {
+  margin-left: 7px;
+  margin-top: 2px;
+  content: url("../../assets/logos/send-button.png");
+}
+
+.contact__form-btn:hover,
+.contact__up-btn--active:hover {
+  box-shadow: 0 0 29px 8px rgba(255,255,255,0.4);
+}
+
+.contact__up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 65vh;
+  right: 0;
+  margin: 0 30px 0 0;
+  width: 45px;
+  height: 41px;
+  border: 1px solid #4d4d4d;
+  background: var(--white-background);
+  box-shadow: 0 18px 29px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition-duration: 1s;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.contact__up-btn--active {
+  opacity: 1;
+}
+
+.contact__up-btn-arrow {
+  content: url("../../assets/logos/up-btn-arrow.png");
+}
+
+.contact__footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 58px;
+  border-top: 1px solid var(--white-background);
+}
+
+.contact__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 26px 0 30px;
+  width: 18%;
+}
+
+.contact__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  background: var(--white-background);
+}
+
+.contact__facebook-photo {
+  width: 12px;
+  height: 17px;
+  content: url("../../assets/logos/facebook-logo.svg");
+}
+
+.contact__facebook:hover {
+  background: #3A559F;
+}
+
+.contact__facebook:hover > .contact__facebook-photo {
+  width: 12px;
+  height: 17px;
+  content: url("../../assets/logos/facebook-logo-hover.svg");
+}
+
+.contact__twitter-photo {
+  width: 15px;
+  height: 13px;
+  content: url("../../assets/logos/twitter-logo.svg");
+}
+
+.contact__twitter:hover {
+  background: #55ACEE;
+}
+
+.contact__twitter:hover > .contact__twitter-photo {
+  width: 15px;
+  height: 13px;
+  content: url("../../assets/logos/twitter-logo-hover.svg");
+}
+
+.contact__linkedin-photo {
+  width: 13px;
+  height: 13px;
+  content: url("../../assets/logos/linkedin-logo.svg");
+}
+
+.contact__linkedin:hover {
+  background: #007AB9;
+}
+
+.contact__linkedin:hover > .contact__linkedin-photo {
+  width: 13px;
+  height: 13px;
+  content: url("../../assets/logos/linkedin-logo-hover.svg");
+}
+
+.contact__google-plus-photo {
+  width: 22px;
+  height: 17px;
+  content: url("../../assets/logos/google-plus-logo.svg");
+}
+
+.contact__google-plus:hover {
+  background: #DD4B39;
+}
+
+.contact__google-plus:hover > .contact__google-plus-photo {
+  width: 22px;
+  height: 17px;
+  content: url("../../assets/logos/google-plus-logo-hover.svg");
+}
+
+.contact__behance-photo {
+  width: 19px;
+  height: 15px;
+  content: url("../../assets/logos/behance-logo.svg");
+}
+
+.contact__behance:hover {
+  background: #007AB9;
+}
+
+.contact__behance:hover > .contact__behance-photo {
+  width: 19px;
+  height: 15px;
+  content: url("../../assets/logos/behance-logo-hover.svg");
+}
+
+.contact__dribbble-photo {
+  width: 15px;
+  height: 15px;
+  content: url("../../assets/logos/dribbble-logo.svg");
+}
+
+.contact__dribbble:hover {
+  background: #F26798;
+}
+
+.contact__dribbble:hover > .contact__dribbble-photo {
+  width: 15px;
+  height: 15px;
+  content: url("../../assets/logos/dribbble-logo-hover.svg");
+}
+
+.contact__rights {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 272px;
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 15px;
+  color: var(--white-background);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.invalid-input {
+  border: 1px solid red;
+}
+
+@media (max-width: 1365px)  {
+  .wrapper {
+    width: 960px;
+  }
+
+  .contact__separator {
+    margin-top: 110px;
+    width: 52px;
+    height: 4px;
+  }
+
+  .contact__title {
+    margin-top: 10px;
+    letter-spacing: 6px;
+    margin-bottom: 50px;
+    font-size: 38px;
+  }
+
+  /*CONTACT__FORM*/
+
+  .contact__form {
+    width: 620px;
+  }
+
+  .contact__name,
+  .contact__email {
+    width: 300px;
+    height: 47px;
+    padding: 0 8px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__name::placeholder,
+  .contact__email::placeholder {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__message {
+    width: 100%;
+    height: 187px;
+    margin-top: 26px;
+    padding: 23px 8px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__message::placeholder {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__form-btn {
+    margin: 26px auto 0;
+    width: 103px;
+    height: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__btn-arrow {
+    margin-left: 6px;
+    margin-top: 1px;
+  }
+
+  .contact__up-btn {
+    position: fixed;
+    top: 65vh;
+    right: 0;
+    margin: 0 20px 0 0 ;
+    width: 41px;
+    height: 37px;
+  }
+
+  .contact__footer {
+    margin-top: 48px;
+  }
+
+  .contact__social {
+    margin: 26px 0 30px;
+    width: 18%;
+  }
+
+  .contact__social-item {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contact__facebook-photo {
+    width: 12px;
+    height: 17px;
+  }
+
+  .contact__facebook:hover > .contact__facebook-photo {
+    width: 12px;
+    height: 17px;
+  }
+
+  .contact__twitter-photo {
+    width: 15px;
+    height: 13px;
+  }
+
+  .contact__twitter:hover > .contact__twitter-photo {
+    width: 15px;
+    height: 13px;
+  }
+
+  .contact__linkedin-photo {
+    width: 13px;
+    height: 13px;
+  }
+
+  .contact__linkedin:hover > .contact__linkedin-photo {
+    width: 13px;
+    height: 13px;
+  }
+
+  .contact__google-plus-photo {
+    width: 22px;
+    height: 17px;
+  }
+
+  .contact__google-plus:hover > .contact__google-plus-photo {
+    width: 22px;
+    height: 17px;
+  }
+
+  .contact__behance-photo {
+    width: 19px;
+    height: 15px;
+  }
+
+  .contact__behance:hover > .contact__behance-photo {
+    width: 19px;
+    height: 15px;
+  }
+
+  .contact__dribbble-photo {
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact__dribbble:hover > .contact__dribbble-photo {
+    width: 15px;
+    height: 15px;
+  }
+
+  .contact__rights {
+    margin-left: 222px;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 1023px)  {
+  .wrapper {
+    width: 720px;
+  }
+
+  .contact__separator {
+    margin-top: 90px;
+    width: 38px;
+    height: 3px;
+  }
+
+  .contact__title {
+    margin-top: 8px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+  /*CONTACT__FORM*/
+
+  .contact__form {
+    width: 570px;
+  }
+
+  .contact__name,
+  .contact__email {
+    width: 275px;
+    height: 44px;
+    padding: 0 8px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__name::placeholder,
+  .contact__email::placeholder {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__message {
+    width: 100%;
+    height: 187px;
+    margin-top: 26px;
+    padding: 23px 8px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__message::placeholder {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__form-btn {
+    margin: 26px auto 0;
+    width: 103px;
+    height: 36px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__btn-arrow {
+    margin-left: 6px;
+    margin-top: 1px;
+  }
+
+  .contact__up-btn {
+    position: fixed;
+    top: 65vh;
+    right: 0;
+    margin: 0 20px 0 0 ;
+    width: 37px;
+    height: 33px;
+  }
+
+  .contact__footer {
+    margin-top: 48px;
+  }
+
+  .contact__social {
+    margin: 26px 0 30px;
+    width: 18%;
+  }
+
+  .contact__social-item {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact__facebook-photo {
+    width: 10px;
+    height: 14px;
+  }
+
+  .contact__facebook:hover > .contact__facebook-photo {
+    width: 10px;
+    height: 14px;
+  }
+
+  .contact__twitter-photo {
+    width: 13px;
+    height: 11px;
+  }
+
+  .contact__twitter:hover > .contact__twitter-photo {
+    width: 13px;
+    height: 11px;
+  }
+
+  .contact__linkedin-photo {
+    width: 13px;
+    height: 13px;
+  }
+
+  .contact__linkedin:hover > .contact__linkedin-photo {
+    width: 11px;
+    height: 11px;
+  }
+
+  .contact__google-plus-photo {
+    width: 18px;
+    height: 13px;
+  }
+
+  .contact__google-plus:hover > .contact__google-plus-photo {
+    width: 18px;
+    height: 13px;
+  }
+
+  .contact__behance-photo {
+    width: 16px;
+    height: 12px;
+  }
+
+  .contact__behance:hover > .contact__behance-photo {
+    width: 16px;
+    height: 12px;
+  }
+
+  .contact__dribbble-photo {
+    width: 12px;
+    height: 12px;
+  }
+
+  .contact__dribbble:hover > .contact__dribbble-photo {
+    width: 12px;
+    height: 12px;
+  }
+
+  .contact__rights {
+    margin-left: 152px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 767px)  {
+  .wrapper {
+    width: 440px;
+  }
+
+  .contact__separator {
+    margin-top: 60px;
+    width: 30px;
+    height: 3px;
+  }
+
+  .contact__title {
+    margin-top: 8px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  /*CONTACT__FORM*/
+
+  .contact__form {
+    width: 380px;
+  }
+
+  .contact__form-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__name,
+  .contact__email {
+    width: 380px;
+    height: 40px;
+    padding: 0 8px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__name::placeholder,
+  .contact__email::placeholder {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__message {
+    width: 100%;
+    height: 150px;
+    margin-top: 0;
+    padding: 12px 8px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__message::placeholder {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__form-btn {
+    margin: 26px auto 0;
+    width: 103px;
+    height: 32px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .contact__btn-arrow {
+    width: 12px;
+    margin-left: 6px;
+    margin-top: 2px;
+  }
+
+  .contact__up-btn {
+    position: fixed;
+    top: 65vh;
+    right: 0;
+    margin: 0 12px 0 0 ;
+    width: 30px;
+    height: 26px;
+  }
+
+  .contact__footer {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 38px;
+  }
+
+  .contact__social {
+    margin: auto 0;
+    width: 40%;
+  }
+
+  .contact__social-item {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact__facebook-photo {
+    width: 10px;
+    height: 14px;
+  }
+
+  .contact__facebook:hover > .contact__facebook-photo {
+    width: 10px;
+    height: 14px;
+  }
+
+  .contact__twitter-photo {
+    width: 13px;
+    height: 11px;
+  }
+
+  .contact__twitter:hover > .contact__twitter-photo {
+    width: 13px;
+    height: 11px;
+  }
+
+  .contact__linkedin-photo {
+    width: 13px;
+    height: 13px;
+  }
+
+  .contact__linkedin:hover > .contact__linkedin-photo {
+    width: 11px;
+    height: 11px;
+  }
+
+  .contact__google-plus-photo {
+    width: 18px;
+    height: 13px;
+  }
+
+  .contact__google-plus:hover > .contact__google-plus-photo {
+    width: 18px;
+    height: 13px;
+  }
+
+  .contact__behance-photo {
+    width: 16px;
+    height: 12px;
+  }
+
+  .contact__behance:hover > .contact__behance-photo {
+    width: 16px;
+    height: 12px;
+  }
+
+  .contact__dribbble-photo {
+    width: 12px;
+    height: 12px;
+  }
+
+  .contact__dribbble:hover > .contact__dribbble-photo {
+    width: 12px;
+    height: 12px;
+  }
+
+  .contact__rights {
+    margin-left: 0;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 479px)  {
+  .wrapper {
+    width: 300px;
+  }
+
+  .contact__separator {
+    margin-top: 50px;
+    width: 26px;
+    height: 3px;
+  }
+
+  .contact__title {
+    margin-top: 8px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+
+  /*CONTACT__FORM*/
+
+  .contact__form {
+    width: 250px;
+  }
+
+  .contact__form-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__name,
+  .contact__email {
+    width: 100%;
+    height: 36px;
+    padding: 0 8px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .contact__name::placeholder,
+  .contact__email::placeholder {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .contact__message {
+    width: 100%;
+    height: 150px;
+    margin-top: 0;
+    padding: 12px 8px 0;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .contact__message::placeholder {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .contact__form-btn {
+    margin: 26px auto 0;
+    width: 103px;
+    height: 32px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .contact__btn-arrow {
+    width: 12px;
+    margin-left: 6px;
+    margin-top: 1px;
+  }
+
+  .contact__up-btn {
+    position: fixed;
+    top: 65vh;
+    right: 0;
+    margin: 0 6px 0 0 ;
+    width: 26px;
+    height: 24px;
+  }
+
+  .contact__footer {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    margin-top: 38px;
+  }
+
+  .contact__social {
+    margin: auto 0;
+    width: 45%;
+  }
+
+  .contact__social-item {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact__facebook-photo {
+    width: 10px;
+    height: 14px;
+  }
+
+  .contact__facebook:hover > .contact__facebook-photo {
+    width: 10px;
+    height: 14px;
+  }
+
+  .contact__twitter-photo {
+    width: 13px;
+    height: 11px;
+  }
+
+  .contact__twitter:hover > .contact__twitter-photo {
+    width: 13px;
+    height: 11px;
+  }
+
+  .contact__linkedin-photo {
+    width: 13px;
+    height: 13px;
+  }
+
+  .contact__linkedin:hover > .contact__linkedin-photo {
+    width: 11px;
+    height: 11px;
+  }
+
+  .contact__google-plus-photo {
+    width: 18px;
+    height: 13px;
+  }
+
+  .contact__google-plus:hover > .contact__google-plus-photo {
+    width: 18px;
+    height: 13px;
+  }
+
+  .contact__behance-photo {
+    width: 16px;
+    height: 12px;
+  }
+
+  .contact__behance:hover > .contact__behance-photo {
+    width: 16px;
+    height: 12px;
+  }
+
+  .contact__dribbble-photo {
+    width: 12px;
+    height: 12px;
+  }
+
+  .contact__dribbble:hover > .contact__dribbble-photo {
+    width: 12px;
+    height: 12px;
+  }
+
+  .contact__rights {
+    margin-left: 0;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}

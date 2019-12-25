@@ -1,0 +1,495 @@
+.header {
+  background: url("/../../assets/backgrounds/header-background .png") no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.header-logo__photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  margin: 0 auto;
+}
+
+.header-logo__main-title,
+.header-logo__sub-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #000000;
+}
+
+.header-logo__main-title {
+  margin: 10px 0 5px;
+  font-family: "Lato Light", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.header-logo__sub-title {
+  font-family: "Lato Regular", sans-serif;
+  font-size: 8px;
+}
+
+.header-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 42%;
+}
+
+.header-navigation__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Asap Regular", sans-serif;
+  color: var(--main-color_dark-grey);
+  font-weight: bold;
+  margin: 30px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header-navigation__item-text {
+  width: border-box;
+  position: relative;
+  padding: 10px 0;
+}
+
+.header-navigation__item-text:hover {
+  transition: width .3s ease-in-out;
+}
+
+.header-navigation__item-text:after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  content: "";
+  background-color: #878787;
+  height: 2px;
+  width: 0;
+  margin-top: 7px;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.header-navigation__item-text:hover:after,
+.header-navigation__item-text:focus:after {
+  width: 100%;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__main {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  margin: 175px 0 0 -90px;
+  transition-duration: 2s;
+  opacity: 0;
+}
+
+.header__main--animated {
+  opacity: 1;
+  transform: translate(90px, 0);
+}
+
+.header__main-title {
+  font-family: "Asap Medium", sans-serif;
+  font-size: 90px;
+  margin-left: -4px;
+  color: var(--main-color_dark-grey);
+}
+
+.header__sub-title {
+  font-family: "Asap Medium", sans-serif;
+  font-size: 22px;
+  color: var(--sub-color_light-grey);
+}
+
+.header__btn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.header__btn-know-more,
+.header__btn-hire-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  margin-right: 20px;
+  background: transparent;
+  border: 1px solid var(--main-color_dark-grey);
+  font-family: "Asap Medium", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--main-color_dark-grey);
+  cursor: pointer;
+}
+
+.header__btn-know-more:hover,
+.header__btn-hire-me:hover {
+  border: transparent;
+  background: var(--white-background);
+  box-shadow: 0 18px 29px 8px rgba(0,0,0,0.1);
+}
+
+.header__main-photo {
+  width: 570px;
+  height: 639px;
+  margin: 0 -90px 0 0;
+  transition-duration: 2s;
+  visibility: visible;
+  opacity: 0;
+}
+
+.header__main-photo--animated {
+  transform: translate(-90px, 0);
+  opacity: 1;
+}
+
+@media (max-width: 1365px) {
+  .wrapper {
+    width: 960px;
+  }
+
+  .header-logo {
+    margin-top: 25px;
+  }
+
+  .header-logo__main-title {
+    margin: 8px 0 5px;
+  }
+
+  .header-navigation__item {
+    margin: 25px 0;
+  }
+
+
+  .header__main {
+    width: 55%;
+    margin: 155px 0 0 -90px;
+    transition-duration: 2s;
+    opacity: 0;
+  }
+
+  .header__main--animated {
+    opacity: 1;
+    transform: translate(90px, 0);
+  }
+
+  .header__main-title {
+    font-size: 80px;
+    margin-left: -4px;
+  }
+
+  .header__sub-title {
+    font-size: 18px;
+  }
+
+  .header__btn {
+    margin-top: 30px;
+  }
+
+  .header__btn-know-more,
+  .header__btn-hire-me {
+    width: 140px;
+    height: 46px;
+    margin-right: 18px;
+    font-size: 15px;
+  }
+
+  .header__main-photo {
+    width: 450px;
+    height: 499px;
+    margin: 0 -90px 0 0;
+    transition-duration: 2s;
+    visibility: visible;
+    opacity: 0;
+  }
+
+  .header__main-photo--animated {
+    transform: translate(-90px, 0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1023px) {
+  .wrapper {
+    width: 720px;
+  }
+
+  .header-logo {
+    margin-top: 20px;
+  }
+
+  .header-logo__photo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .header-logo__main-title {
+    margin: 6px 0 3px;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+
+  .header-logo__sub-title {
+    font-size: 8px;
+  }
+
+  .header-navigation__item {
+    margin: 20px 0;
+    font-size: 12px;
+  }
+
+  .header__main {
+    width: 55%;
+    margin: 105px 0 0 -30px;
+    transition-duration: 2s;
+    opacity: 0;
+  }
+
+  .header__main--animated {
+    opacity: 1;
+    transform: translate(30px, 0);
+  }
+
+  .header__main-title {
+    font-size: 60px;
+    margin-left: -4px;
+  }
+
+  .header__sub-title {
+    font-size: 14px;
+  }
+
+  .header__btn {
+    margin-top: 20px;
+  }
+
+  .header__btn-know-more,
+  .header__btn-hire-me {
+    width: 100px;
+    height: 36px;
+    margin-right: 15px;
+    font-size: 12px;
+  }
+
+  .header__main-photo {
+    width: 350px;
+    height: 399px;
+    margin: 0 -30px 0 0;
+    transition-duration: 2s;
+    visibility: visible;
+    opacity: 0;
+  }
+
+  .header__main-photo--animated {
+    transform: translate(-30px, 0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 440px;
+  }
+
+  .header-logo {
+    margin-top: 14px;
+  }
+
+  .header-logo__photo {
+    height: 16px;
+    width: 16px;
+  }
+
+  .header-logo__main-title {
+    margin: 4px 0 2px;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+  }
+
+  .header-logo__sub-title {
+    font-size: 6px;
+  }
+
+  .header-navigation {
+    width: 60%;
+  }
+
+  .header-navigation__item {
+    margin: 14px 0;
+    font-size: 10px;
+  }
+
+  .header__main {
+    width: 55%;
+    margin: 65px 0 0 -30px;
+    transition-duration: 1s;
+    opacity: 0;
+  }
+
+  .header__main--animated {
+    opacity: 1;
+    transform: translate(30px, 0);
+  }
+
+  .header__main-title {
+    font-size: 34px;
+    margin-left: -4px;
+  }
+
+  .header__sub-title {
+    font-size: 8px;
+  }
+
+  .header__btn {
+    margin-top: 16px;
+  }
+
+  .header__btn-know-more,
+  .header__btn-hire-me {
+    width: 80px;
+    height: 26px;
+    margin-right: 10px;
+    font-size: 8px;
+  }
+
+  .header__main-photo {
+    width: 230px;
+    height: 259px;
+    margin: 0 -30px 0 0;
+    transition-duration: 1s;
+    visibility: visible;
+    opacity: 0;
+  }
+
+  .header__main-photo--animated {
+    transform: translate(-30px, 0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 479px) {
+  .wrapper {
+    width: 300px;
+  }
+
+  .header-logo {
+    margin-top: 10px;
+  }
+
+  .header-logo__photo {
+    height: 14px;
+    width: 14px;
+  }
+
+  .header-logo__main-title {
+    margin: 4px 0 2px;
+    letter-spacing: 1.5px;
+    font-size: 10px;
+  }
+
+  .header-logo__sub-title {
+    font-size: 6px;
+  }
+
+  .header-navigation {
+    width: 60%;
+  }
+
+  .header-navigation__item {
+    margin: 10px 0;
+    font-size: 7px;
+  }
+
+  .header__main {
+    width: 55%;
+    margin: 50px 0 0 -30px;
+    transition-duration: 1s;
+    opacity: 0;
+  }
+
+  .header__main--animated {
+    opacity: 1;
+    transform: translate(30px, 0);
+  }
+
+  .header__main-title {
+    font-size: 22px;
+    margin-left: -2px;
+  }
+
+  .header__sub-title {
+    font-size: 6px;
+  }
+
+  .header__btn {
+    margin-top: 10px;
+  }
+
+  .header__btn-know-more,
+  .header__btn-hire-me {
+    width: 50px;
+    height: 20px;
+    margin-right: 8px;
+    font-size: 7px;
+  }
+
+  .header__main-photo {
+    width: 160px;
+    height: 179px;
+    margin: 0 -30px 0 0;
+    transition-duration: 1s;
+    visibility: visible;
+    opacity: 0;
+  }
+
+  .header__main-photo--animated {
+    transform: translate(-30px, 0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="portfolio" id="portfolio">
+  <div class="wrapper">
+    <div class="portfolio__content">
+      <span class="portfolio__separator"></span>
+      <h2 class="portfolio__title">portfolio</h2>
+      <div class="portfolio__main">
+        <a class="portfolio__item" *ngFor="let image of visibleImgArray"><img class="portfolio__photo" [src]="image.src" [alt]="image.alt"></a>
+      </div>
+      <button [disabled]="visibleImgArray.length === imageArray.length" (click)="showMore()" class="portfolio__btn">load more</button>
+    </div>
+  </div>
+</div>

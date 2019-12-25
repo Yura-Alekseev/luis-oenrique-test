@@ -1,0 +1,48 @@
+<div class="contact" id="contact">
+  <div class="wrapper">
+    <div class="contact__content">
+      <span class="contact__separator"></span>
+      <h2 class="contact__title">say hello !</h2>
+
+      <form class="contact__form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="contact__form-input">
+          <input
+            class="contact__name" type="text" placeholder="Name"
+            formControlName="name"
+            [ngClass]="{'invalid-input': form.get('name').invalid && form.get('name').touched}"
+          >
+          <input
+            class="contact__email" type="email" placeholder="Email"
+            formControlName="email"
+            [ngClass]="{'invalid-input': form.get('email').invalid && form.get('email').touched}"
+          >
+        </div>
+        <textarea
+          class="contact__message" placeholder="Message"
+          formControlName="message"
+          [ngClass]="{'invalid-input': form.get('message').invalid && form.get('message').touched}"
+        ></textarea>
+
+        <button
+          class="contact__form-btn" type="submit"
+          [disabled]="form.invalid"
+        >send<span class="contact__btn-arrow"></span></button>
+      </form>
+    </div>
+
+    <div class="contact__up-btn" id="BtnToTop" (click)="scrollTo('home')"><span class="contact__up-btn-arrow"></span></div>
+
+    <div class="contact__footer">
+        <div class="contact__social">
+          <a class="contact__social-item contact__facebook" href="javascript:;"><span class="contact__facebook-photo"></span></a>
+          <a class="contact__social-item contact__twitter" href="javascript:;"><span class="contact__twitter-photo"></span></a>
+          <a class="contact__social-item contact__linkedin" href="javascript:;"><span class="contact__linkedin-photo"></span></a>
+          <a class="contact__social-item contact__google-plus" href="javascript:;"><span class="contact__google-plus-photo"></span></a>
+          <a class="contact__social-item contact__behance" href="javascript:;"><span class="contact__behance-photo"></span></a>
+          <a class="contact__social-item contact__dribbble" href="javascript:;"><span class="contact__dribbble-photo"></span></a>
+        </div>
+
+      <span class="contact__rights">2017. All Right Reserved</span>
+    </div>
+  </div>
+</div>

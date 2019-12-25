@@ -1,0 +1,47 @@
+<header class="header">
+  <div class="wrapper">
+    <div class="header__header" id="home">
+      <div class="header-logo">
+        <img class="header-logo__photo" src="../../assets/logos/header-logo.png" alt="header-logo">
+        <span class="header-logo__main-title">oenrique</span>
+        <span class="header-logo__sub-title">UX/UI expert</span>
+      </div>
+
+      <nav class="header-navigation">
+        <a class="header-navigation__item" (click)="reloadPage()">
+          <span class="header-navigation__item-text">Home</span>
+        </a>
+
+        <a class="header-navigation__item" (click)="scrollTo('know-more')">
+          <span class="header-navigation__item-text">About</span>
+        </a>
+
+        <a class="header-navigation__item" (click)="scrollTo('services')">
+          <span class="header-navigation__item-text">Service</span>
+        </a>
+
+        <a class="header-navigation__item" (click)="scrollTo('portfolio')">
+          <span class="header-navigation__item-text">Portfolio</span>
+        </a>
+
+        <a class="header-navigation__item" (click)="scrollTo('contact')">
+          <span class="header-navigation__item-text">Contact</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="header__content">
+      <div class="header__main"  animateOnScroll animationName="header__main--animated">
+        <h1 class="header__main-title">Luis Oenrique</h1>
+        <h2 class="header__sub-title">User Experience / User Interface Expert</h2>
+
+        <div class="header__btn">
+          <a class="header__btn-know-more" (click)="scrollTo('know-more')">know more</a>
+          <a class="header__btn-hire-me"(click)="scrollTo('contact')">hire me</a>
+        </div>
+      </div>
+
+      <img class="header__main-photo" src="../../assets/img/header-photo.png" alt="hero" animateOnScroll animationName="header__main-photo--animated">
+    </div>
+  </div>
+</header>
