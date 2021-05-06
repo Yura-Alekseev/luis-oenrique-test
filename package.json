@@ -21,7 +21,7 @@
     "@angular/router": "^7.2.15",
     "angular-scroll": "^1.0.2",
     "core-js": "^2.6.11",
-    "highcharts": "^7.2.1",
+    "highcharts": "^9.0.0",
     "highcharts-angular": "^2.4.0",
     "ng2-animate-on-scroll": "^1.2.0",
     "ng2-smooth-scroll": "^1.0.1",
